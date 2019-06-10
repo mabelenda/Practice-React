@@ -16,6 +16,7 @@ constructor(){
 
 handleSubmit(e){
    e.preventDefault();
+   console.log(this.state);
    this.props.onAddTask(this.state);
 }
 
@@ -33,33 +34,33 @@ handleInput(e){
             <div className="form-group">
                 <input
                     type="text"
-                    name="Titulo"
+                    name="title"
                     onChange={this.handleInput}
                     className="form-control"
-                    placeholder= "Title"
+                    placeholder="Titulo"
                 />  
             </div>
             <div className="form-group">
                 <input
                     type="text"
-                    name="Responsable"
+                    name="responsible"
                     onChange={this.handleInput}
                     className="form-control"
-                    placeholder= "Responsible"
+                    placeholder="Responsable"
                 />  
             </div>
             <div className="form-group">
                 <input
                     type="text"
-                    name="Descripcion"
+                    name="description"
                     onChange={this.handleInput}
                     className="form-control"
-                    placeholder= "Description"
+                    placeholder="Descripción"
                 />  
             </div>
             <div className="form-group">
                 <select
-                    name="Prioridad"
+                    name="priority"
                     onChange={this.handleInput}
                     className="form-control"
                 > 
